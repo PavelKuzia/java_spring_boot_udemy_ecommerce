@@ -1,0 +1,4 @@
+<h3 class="text-muted" style="margin-bottom: 2%;">In Bucket {{ products.length }} products </h3>
+<p *ngFor="let item of products">
+  {{item.name}}: {{item.unitPrice | currency: "USD"}}
+</p>

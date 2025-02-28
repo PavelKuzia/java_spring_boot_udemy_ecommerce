@@ -19,9 +19,6 @@ public class ProductController {
 
     @GetMapping("/rest/products")
     private List<Product> getProducts() {
-        System.out.println("getProducts");
-        List<Product> products = repo.findAll();
-        // System.out.println(products.getFirst().getName());
         return repo.findAll();
     }
 }

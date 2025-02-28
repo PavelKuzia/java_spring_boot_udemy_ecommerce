@@ -15,8 +15,8 @@ public class DataConfig {
     @Bean
     public CommandLineRunner DataLoader(ProductRepository repo, ProductCategoryRepository catRepo) {
         return _ -> {
-            System.out.print("Loading Data to Postgres SQL...");
-            ProductCategory cat = new ProductCategory("Books");
+            System.out.println("Server is ready to receive requests!");
+            /*ProductCategory cat = new ProductCategory("Books");
 
             catRepo.save(cat);
             repo.save(new Product("BOOK-TECH-1000", "JavaScript - The Fun Parts", "Learn JavaScript",
@@ -33,7 +33,7 @@ public class DataConfig {
             repo.save(new Product("BOOK-TECH-1004", "The Go Programming Language: A to Z", "Learn Go",
                     "assets/images/products/placeholder.png"
                     ,true,100,BigDecimal.valueOf(24.99),cat));
-            System.out.println(" Done!");
+            System.out.println(" Done!");*/
         };
     }
 }
